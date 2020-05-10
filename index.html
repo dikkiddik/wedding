@@ -16,12 +16,17 @@
 
       <a-assets>
         <!-- 表示する画像 -->
-        <img id="wao" src="./images/menu1.png">
+        <img id="menu1" src="./images/menu1.png">
+        <img id="menu2" src="./images/menu2.png">
       </a-assets>
       
       <!-- マーカーを登録（プリセットされている「hiro」マーカー） -->
       <a-marker preset="hiro">
-        <a-image src="#wao" width="2" height="2" rotation="-90 0 0"></a-image>
+        <a-image src="#menu1" width="2" height="2" rotation="-90 0 0"></a-image>
+      </a-marker>
+      
+      <a-marker preset="kanji">
+        <a-image src="#menu2" width="2" height="2" rotation="-90 0 0"></a-image>
       </a-marker>
 
       <!-- AR用のカメラを置く -->
